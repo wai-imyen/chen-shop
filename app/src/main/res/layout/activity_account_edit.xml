@@ -6,7 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".AccountEditActivity">
 
     <include
         android:id="@+id/header"
@@ -34,91 +34,63 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="會員登入"
+                    android:text="會員資料"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <TextView
-                    android:id="@+id/textAccount"
+                    android:id="@+id/textEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="帳號(Email)"
+                    android:layout_marginTop="20dp"
+                    android:text="帳號："
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
-                    android:id="@+id/account"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:ems="10"
-                    android:hint="請輸入帳號"
-                    android:inputType="textPersonName"
-                    android:text="yen.chen@codepulse.com.tw" />
-
                 <TextView
-                    android:id="@+id/textPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="密碼"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <EditText
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:ems="10"
-                    android:hint="請輸入密碼"
-                    android:inputType="textPassword" />
-
-                <TextView
-                    android:id="@+id/forgotten"
+                    android:id="@+id/textName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:gravity="right"
-                    android:text="忘記密碼?" />
+                    android:text="姓名"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="請輸入姓名"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textTelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="聯絡電話"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="請輸入聯絡電話"
+                    android:inputType="textPersonName" />
 
                 <Button
                     android:id="@+id/submit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="登入" />
-
-                <View
-                    android:id="@+id/hr"
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="24dp"
-                    android:background="#c0c0c0"
-                    app:layout_constraintTop_toBottomOf="@+id/footerEmail" />
-
-                <TextView
-                    android:id="@+id/text_new_member"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="新會員"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="註冊一個帳號以便您能更快速的購物、檢視訂單狀態、檢視訂購記錄、和更多的管理項目。"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    app:lineHeight="25dp" />
+                    android:text="送出" />
 
                 <Button
-                    android:id="@+id/register"
+                    android:id="@+id/logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="註冊帳號" />
-
+                    android:text="登出" />
 
             </LinearLayout>
         </ScrollView>
