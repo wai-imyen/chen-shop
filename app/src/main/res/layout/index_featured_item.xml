@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/featuredImage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no_banner" />
+
+    <TextView
+        android:id="@+id/featuredText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="商品名稱"
+        app:layout_constraintEnd_toEndOf="@+id/featuredImage"
+        app:layout_constraintStart_toStartOf="@+id/featuredImage"
+        app:layout_constraintTop_toBottomOf="@+id/featuredImage" />
+
+    <TextView
+        android:id="@+id/featuredPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:text="價格"
+        app:layout_constraintEnd_toEndOf="@+id/featuredImage"
+        app:layout_constraintStart_toStartOf="@+id/featuredImage"
+        app:layout_constraintTop_toBottomOf="@+id/featuredText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

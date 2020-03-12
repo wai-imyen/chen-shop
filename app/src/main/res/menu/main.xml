@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_home"
+            android:checked="true"
+            android:title="首頁" />
+
+        <item
+            android:id="@+id/action_login"
+            android:title="會員中心" />
+
+        <item
+            android:id="@+id/action_brand"
+            android:title="關於品牌" />
+
+        <item
+            android:id="@+id/action_help"
+            android:title="商業合作" />
+
+        <item
+            android:id="@+id/action_settings"
+            android:title="購物須知" />
+
+        <item
+            android:id="@+id/action_about"
+            android:title="隱私權條款" />
+    </group>
+
+</menu>
