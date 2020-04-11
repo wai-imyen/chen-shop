@@ -83,7 +83,7 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
         RequestQueue queue = Volley.newRequestQueue(this);
 
         // 抓取首頁商品
-        String url_get_featured = "http://charles.codepulse.com.tw/api/products/&token=23650660";
+        String url_get_featured = "http://charles.codepulse.com.tw/api/products/&token=6Cy0==QfiAjLw4SMiojI2JCLiEkI6ICZiwiIlNHb1BXZk92YiojIzJyeXtRP";
 
         // Get
         StringRequest stringGetRequest = new StringRequest(Request.Method.GET, url_get_featured, new Response.Listener<String>() {
@@ -122,7 +122,7 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("tag", error.getMessage());
+//                Log.d("tag", error.getMessage());
             }
         });
         queue.add(stringGetRequest);

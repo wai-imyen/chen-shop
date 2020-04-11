@@ -26,6 +26,8 @@ public class VolleyRequest {
                 Log.d("tag", error.getMessage());
             }
         });
+
+//        queue.add(stringGetRequest);
     }
 
     public void RequestPost(String url){
@@ -50,6 +52,8 @@ public class VolleyRequest {
                 return map;
             }
         };
+
+//        queue.add(stringPostRequest);
     }
 
 

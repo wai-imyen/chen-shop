@@ -13,7 +13,9 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.yen.androbe.library.Config;
 import com.yen.androbe.library.GlideImageLoader;
+import com.yen.androbe.library.Helper;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -26,16 +28,27 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected ImageView search_icon;
     protected ImageView language_icon;
     protected ImageView cart_icon;
+    protected Config config;
+    protected Helper helper;
 
     public NavigationView navigation_view;
     public NavigationView nav;
 
     @Override
     public void setContentView(int layoutResID) {
+
+        config = new Config();
+        config.setHost("http://charles.codepulse.com.tw");
+        config.setToken("6Cy0==QfiAjLw4SMiojI2JCLiEkI6ICZiwiIlNHb1BXZk92YiojIzJyeXtRP");
+
+        helper = new Helper();
+
         super.setContentView(layoutResID);
         imageLoader = new GlideImageLoader();
         drawer_layout = findViewById(R.id.drawer_layout);
         toolbar = findViewById(R.id.toolbar);
+
+
     }
 
     public void setToolbar() {
