@@ -59,7 +59,7 @@ public class LoginActivity extends BaseActivity {
         String accountToken = sp.getString("accountToken", "");
         if ( ! accountToken.isEmpty()){
             Intent intent = new Intent();
-            intent.setClass(LoginActivity.this, AccountEditActivity.class);
+            intent.setClass(LoginActivity.this, AccountActivity.class);
             startActivity(intent);
             finish();
         }
@@ -145,7 +145,7 @@ public class LoginActivity extends BaseActivity {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
                                                 Intent intent = new Intent();
-                                                intent.setClass(LoginActivity.this, AccountEditActivity.class);
+                                                intent.setClass(LoginActivity.this, AccountActivity.class);
                                                 startActivity(intent);
                                                 finish();
                                             }

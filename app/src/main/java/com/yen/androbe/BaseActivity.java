@@ -38,7 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void setContentView(int layoutResID) {
 
         config = new Config();
-        config.setHost("http://charles.codepulse.com.tw");
+        config.setHost("http://app.codepulse.com.tw");
         config.setToken("6Cy0==QfiAjLw4SMiojI2JCLiEkI6ICZiwiIlNHb1BXZk92YiojIzJyeXtRP");
 
         helper = new Helper();

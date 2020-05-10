@@ -112,7 +112,7 @@ public class RegisterActivity extends BaseActivity {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
                                                 Intent intent = new Intent();
-                                                intent.setClass(RegisterActivity.this, AccountEditActivity.class);
+                                                intent.setClass(RegisterActivity.this, AccountActivity.class);
                                                 startActivity(intent);
                                                 finish();
                                             }

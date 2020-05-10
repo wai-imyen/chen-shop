@@ -67,7 +67,7 @@ public class ProductActivity extends BaseActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
 
         // 抓取商品 Api
-        String url_api = "http://charles.codepulse.com.tw/api/products/" + product_id + "/&token=23650660";
+        String url_api = config.getHost() + "/api/products/" + product_id + "/&token=" + config.getToken();
 
         // Get
         StringRequest stringGetRequest = new StringRequest(Request.Method.GET, url_api, new Response.Listener<String>() {

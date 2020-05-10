@@ -16,7 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AccountEditActivity"></activity>
+        <activity android:name=".ResetActivity"></activity>
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".AccountEditActivity" />
         <activity android:name=".ForgottenActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />

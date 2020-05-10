@@ -10,6 +10,7 @@ public class FormError {
     protected String confirm;
     protected String gender;
     protected String birthday;
+    protected String new_password;
 
     public String getForm() {
         return form;
@@ -73,5 +74,13 @@ public class FormError {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
+    }
+
+    public String getNew_password() {
+        return new_password;
+    }
+
+    public void setNew_password(String new_password) {
+        this.new_password = new_password;
     }
 }
