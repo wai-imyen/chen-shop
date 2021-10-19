@@ -53,7 +53,7 @@
                     android:ems="10"
                     android:hint="請輸入帳號"
                     android:inputType="textPersonName"
-                    android:text="yen.chen@codepulse.com.tw" />
+                    android:text="wai.imyen@gmail.com" />
 
                 <TextView
                     android:id="@+id/textPassword"

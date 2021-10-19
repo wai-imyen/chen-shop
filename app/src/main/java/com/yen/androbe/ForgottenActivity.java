@@ -72,7 +72,7 @@ public class ForgottenActivity extends BaseActivity {
                         // Forgotten
                         Forgotten forgotten = jsonBean.getData();
 
-                        if (jsonBean.getCode().equals("0")){
+                        if (jsonBean.getCode().equals("200")){
                             if (forgotten != null){
                                 //FormError
                                 FormError formError = forgotten.getErrors();

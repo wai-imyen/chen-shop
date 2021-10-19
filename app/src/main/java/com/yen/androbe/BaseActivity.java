@@ -38,7 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void setContentView(int layoutResID) {
 
         config = new Config();
-        config.setHost("http://app.codepulse.com.tw");
+        config.setHost("https://abba-114-24-181-234.ngrok.io");
         config.setToken("6Cy0==QfiAjLw4SMiojI2JCLiEkI6ICZiwiIlNHb1BXZk92YiojIzJyeXtRP");
 
         helper = new Helper();
@@ -58,7 +58,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         cart_icon = findViewById(R.id.cart_icon);
 
         // 載入 logo
-        imageLoader.displayImage(this, "https://www.androbe.com/catalog/view/images/logo.png", logo);
+        imageLoader.displayImage(this, config.getHost() + "/image/catalog/chen.png", logo);
 
         // 用toolbar做為 APP的ActionBar
         setSupportActionBar(toolbar);

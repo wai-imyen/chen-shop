@@ -83,7 +83,7 @@ public class PasswordActivity extends BaseActivity {
                         Type objectType = new TypeToken<JsonBean<Password>>() {}.getType();
                         JsonBean<Password> jsonBean = gson.fromJson(response, objectType);
 
-                        if (jsonBean.getCode().equals("0")){
+                        if (jsonBean.getCode().equals("200")){
 
                             // 取得 Password
                             Password password = jsonBean.getData();

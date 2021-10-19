@@ -107,7 +107,7 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
                     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Toast.makeText(MainActivity.this, "你選取了" + featured_products.get(position).getName(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MainActivity.this, "你選取了" + featured_products.get(position).getName(), Toast.LENGTH_SHORT).show();
 
                     // 跳轉頁面
                     Intent product_intent = new Intent(MainActivity.this, ProductActivity.class);
@@ -135,8 +135,8 @@ public class MainActivity extends BaseActivity implements OnBannerListener {
 
     private void setupIndexbanner() {
         List<String> images = new ArrayList<>();
-        images.add("https://www.androbe.com/image/catalog/Banner/JET_0963_banner.jpg");
-        images.add("https://www.androbe.com/image/catalog/Banner/JET_0324_bannerv.jpg");
+        images.add(config.getHost() + "/image/catalog/banner/1.jpg");
+        images.add(config.getHost() + "/image/catalog/banner/2.jpg");
         com.youth.banner.Banner banner = findViewById(R.id.banner);
         banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         banner.setImages(images)

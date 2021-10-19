@@ -123,7 +123,7 @@ public class AccountEditActivity extends BaseActivity {
                         Gson gson = new Gson();
                         JsonBean jsonBean = gson.fromJson(response, JsonBean.class);
 
-                        if (jsonBean.getCode().equals("0")){
+                        if (jsonBean.getCode().equals("200")){
                             new AlertDialog.Builder(AccountEditActivity.this)
                                     .setTitle("會員修改")
                                     .setMessage("修改成功")

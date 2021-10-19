@@ -67,7 +67,7 @@ public class ProductActivity extends BaseActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
 
         // 抓取商品 Api
-        String url_api = config.getHost() + "/api/products/" + product_id + "/&token=" + config.getToken();
+        String url_api = config.getHost() + "/api/products/" + product_id + "&token=" + config.getToken();
 
         // Get
         StringRequest stringGetRequest = new StringRequest(Request.Method.GET, url_api, new Response.Listener<String>() {
@@ -87,11 +87,10 @@ public class ProductActivity extends BaseActivity {
 
                 images = new ArrayList<>();
                 images.add(product.getThumb());
-                images.add("https://www.androbe.com/image/catalog/Product/和身兼帶花洋裝-粉色/JET_0199.jpg");
-                images.add("https://www.androbe.com/image/catalog/Product/和身兼帶花洋裝-粉色/JET_0203.jpg");
-                images.add("https://www.androbe.com/image/catalog/Product/和身兼帶花洋裝-粉色/商品屬性與保養_商約派微中_01.png");
-                images.add("https://www.androbe.com/image/catalog/Product/和身兼帶花洋裝-粉色/JET_0180v.jpg");
-                images.add("https://www.androbe.com/image/catalog/Product/和身兼帶花洋裝-粉色/JET_0199.jpg");
+                images.add(config.getHost() + "/image/catalog/product/imageQC2000008350_2000_4.jpg");
+                images.add(config.getHost() + "/image/catalog/product/imageQC2000008350_2000_5.jpg");
+                images.add(config.getHost() + "/image/catalog/product/imageQC2000008350_2000_6.jpg");
+                images.add(config.getHost() + "/image/catalog/product/imageQC2000008350_2000_7.jpg");
 
 
                 GalleryAdapter galleryAdapter = new GalleryAdapter(getApplicationContext(), images);
